@@ -1,0 +1,1 @@
+CREATE VIEW [dbo].[TotalSalesByMonth] AS (SELECT Month(DateKey) as "MonthNumber", SUM(SalesAmount) as "Total Sales Amount" from FactOnlineSales group by Month(DateKey))
